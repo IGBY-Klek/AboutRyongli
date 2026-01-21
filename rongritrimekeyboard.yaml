@@ -1,0 +1,55 @@
+#不能单独使用，需要添加至你使用的主题方案*.trime.yaml中
+rry:
+    name: 令里语键盘
+    author: "osfans <waxaca@163.com>"
+    ascii_mode: 0
+    columns: 10 #鍵盤列數，超過則自動換行，默認30列
+    width: 10
+    height: 55
+    lock: true
+    key_symbol_offset_x: 0
+    key_symbol_offset_y: 0
+    key_text_offset_x: 0
+    key_text_offset_y: 0
+    key_hint_offset_x: 0
+    key_hint_offset_y: 0
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    keys:
+    - {click: '1', long_click: copy_all}
+    - {click: '2', long_click: '@'}
+    - {click: '3', long_click: '#'}
+    - {click: '4', long_click: '$'}
+    - {click: '5', long_click: '%'}
+    - {click: '6', long_click: '^'}
+    - {click: '7', long_click: ';'}
+    - {click: '8', long_click: '*'}
+    - {click: '9', long_click: '?'}
+    - {click: '0', long_click: 'Hide'}
+    - {click: 'a', long_click: select_all, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
+    - {click: 's', long_click: '~', swipe_left: Home, swipe_right: End, swipe_up: Page_Up, swipe_down: Page_Down}
+    - {click: 't', long_click: '-', swipe_down: '_', hint: '_'}
+    - {click: 'q', long_click: '+', swipe_down: '=', hint: '='}
+    - {click: 'p', long_click: '\', swipe_down: '|', hint: '|'}
+    - {click: 'u', long_click: '[]{Left}', swipe_left: '[', swipe_right: ']'}
+    - {click: 'j', long_click: '{}{Left}', swipe_left: '{', swipe_right: '}'}
+    - {click: 'k', long_click: '(){Left}', swipe_left: '(', swipe_right: ')'}
+    - {click: 'n', long_click: ':'}
+    - {click: 'g', long_click: '!'}
+    - {click: Shift_L, has_menu: "'", width: 10}
+    - {click: 'w', long_click: cut}
+    - {click: 'e', long_click: copy}
+    - {click: 'y', long_click: paste}
+    - {click: 'o', long_click: '<>{Left}',swipe_left: '<', swipe_right: '>', swipe_down: '	', hint: 'Tab'}
+    - {click: 'h', long_click: '"'}
+    - {click: 'r'}   
+    - {click: 'i'}
+    - {click: 'm', long_click: "'"}
+    - {click: BackSpace, swipe_left: Escape, width: 10}
+    - {click: Mode_switch, long_click: Menu, width: 15}
+    - {click: Keyboard_number, long_click: Keyboard_symbols}
+    - {click: ',', long_click: Color_switch}
+    - {click: space, swipe_up: Keyboard_switch, long_click: IME_switch, width: 30}
+    - {click: '.', long_click: liquid_keyboard_emoji}
+    - {click: '/', long_click: Theme_settings}
+    - {click: Return, composing: Return1, long_click: CommitComment, width: 15} 
